@@ -1,0 +1,25 @@
+server:
+  port: 8000
+  servlet:
+    context-path: /blog
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+#  error:
+#    include-exception: true
+#    include-message: always
+#    include-binding-errors: always
+#    include-stacktrace: always
+spring:
+  datasource:
+     
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/blog?serverTimezone=Asia/Seoul
+      username: root
+      password: 0000
+  mvc:
+    view:
+      prefix: /templates/
+      suffix: .html
+     
